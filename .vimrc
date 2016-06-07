@@ -35,7 +35,7 @@ set shiftwidth=4
 
 "ignore some files for ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
+  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp\|target$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
 if executable('ag')
