@@ -15,7 +15,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sukima/xmledit'
-
+Plugin 'wookiehangover/jshint.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,3 +51,4 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 "treat .flowfrag as xml
 autocmd BufEnter *.flowfrag :setlocal filetype=xml
+
