@@ -33,9 +33,12 @@ set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
 
+"share mac clipboard
+set clipboard=unnamed
+
 "ignore some files for ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp\|target$',
+  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp\|target\|targetTest$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
 if executable('ag')
@@ -52,3 +55,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "treat .flowfrag as xml
 autocmd BufEnter *.flowfrag :setlocal filetype=xml
 
+"Open NERDTree on startup
+autocmd VimEnter * NERDTree
+"autocmd BufEnter * NERDTreeMirror
