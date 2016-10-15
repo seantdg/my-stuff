@@ -1,0 +1,21 @@
+#resize partition and reset password
+
+apt-get update -y
+apt-get upgrade -y
+apt-get dist-upgrade -y
+apt-get clean -y
+apt-get install -y tmux vim curl openvpn unzip git
+curl -ssl https://get.docker.com/ | sh
+apt-get update -y
+apt-get upgrade -y
+apt-get dist-upgrade -y
+apt-get clean -y
+apt-get install -y tmux vim curl openvpn unzip git
+curl -ssl https://get.docker.com/ | sh
+apt-get install xserver-xorg xinit lxde-core lxterminal lxappearance lightdm
+apt-get purge xscreensaver
+reboot
+
+#vpn
+#add user
+#pull docker containers
