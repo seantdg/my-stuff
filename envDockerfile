@@ -1,0 +1,9 @@
+FROM resin/rpi-raspbian:latest
+
+MAINTAINER Sean Davis
+
+RUN apt-get update -y
+RUN apt-get upgrade -y
+RUN apt-get install vim tmux git lynx -y
+
+CMD ["tail", "-f", "/dev/null"]
