@@ -1,0 +1,14 @@
+FROM resin/rpi-raspbian:latest
+
+MAINTAINER Sean Davis
+
+RUN apt-get update -y
+RUN apt-get upgrade -y
+RUN apt-get install tightvncserver xserver-xorg xinit lxde-core lxterminal lxapp
+earance lightdm -y
+RUN apt-get install xfonts-base firefox-esr -y
+ENV USER root
+EXPOSE 5901
+#vncserver
+#vncviewer (ip):1
+CMD ["tail", "-f", "/dev/null"]
